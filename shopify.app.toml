@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "6d3b24884c8f2ca231f5c9db7fd14aa2"
+name = "delivery-date-picker"
+handle = "delivery-date-picker-106"
+application_url = "https://clearance-palm-had-barely.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "ryan-alex-test-extensibility1.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://clearance-palm-had-barely.trycloudflare.com/auth/callback",
+  "https://clearance-palm-had-barely.trycloudflare.com/auth/shopify/callback",
+  "https://clearance-palm-had-barely.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
